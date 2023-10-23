@@ -3,7 +3,7 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
-    return queryInterface.bulkInsert('books', [{
+    return queryInterface.bulkInsert('Books', [{
       title: 'Mastering Express JS',
       author: 'Rizky Perdana Nst',
       year: '2023',
@@ -13,6 +13,6 @@ module.exports = {
   },
 
   async down (queryInterface, Sequelize) {
-    return queryInterface.bulkDelete('books', null, {});
+    return queryInterface.bulkDelete('Books', null, {});
   }
 };
